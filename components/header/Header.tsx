@@ -1,4 +1,6 @@
 "use client";
+import { PhoneIcon, AddIcon, WarningIcon, SearchIcon, MoonIcon } from '@chakra-ui/icons'
+
 import {
   Box,
   Button,
@@ -7,6 +9,7 @@ import {
   Heading,
   HStack,
   Image,
+  Link,
   List,
   ListItem,
 } from "@chakra-ui/react";
@@ -34,7 +37,15 @@ export default function Header() {
 
           {/* Right Areas of Navigation*/}
           <Box>
+          <Box as="span" pl={"15px"}>
+              <SearchIcon w={25} h={25} ></SearchIcon>
+          </Box>
+          <Box as="span" px={"15px"} > 
+          <MoonIcon w={25} h={25}  />
+          </Box>
+            <Link href="https://www.piaic.org" target={"_blank"}>
             <Button variant={"outline"}>Go to PIAIC</Button>
+            </Link>
           </Box>
         </Flex>
       </Box>

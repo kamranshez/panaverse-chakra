@@ -1,4 +1,7 @@
+'use client'
 import Header from "@/components/header/Header";
+import TopContainer from "@/components/topcontainer/TopContainer";
+import { Box } from "@chakra-ui/react";
 
 
 
@@ -7,6 +10,8 @@ export default function Home() {
     <>
   
     <Header />
+    <Box as="main"></Box>
+    <TopContainer />
     
    </>
   )
