@@ -10,8 +10,9 @@ export default function Home() {
     <>
   
     <Header />
-    <Box as="main"></Box>
-    <TopContainer />
+    <Box as="main"><TopContainer /></Box>
+    
+    
     
    </>
   )

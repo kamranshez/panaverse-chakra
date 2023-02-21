@@ -20,6 +20,7 @@ export default function TopContainer() {
         backgroundImage={"/images/background.webp"}
         backgroundSize="contain"
         py="20"
+        mt="5"
       >
         <HStack>
           {/* Left box */}
