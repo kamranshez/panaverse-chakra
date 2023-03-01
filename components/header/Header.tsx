@@ -19,8 +19,8 @@ export default function Header() {
   return (
     <>
       {/* Left area of navigation */}
-      <Box pt={"5px"} as="header">
-        <Flex justifyContent={"space-around"} alignItems={"Center"}>
+      <Box  as="header" position={"sticky"} top="0" zIndex={"1"}>
+        <Flex justifyContent={"space-around"} alignItems={"Center"} bg="white" py="5">
           <Box>
             <HStack>
               <Image src="/images/Logo.webp" alt="logo"></Image>
