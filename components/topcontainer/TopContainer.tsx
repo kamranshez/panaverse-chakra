@@ -20,6 +20,7 @@ export default function TopContainer() {
         as="section"
         backgroundImage={"/images/background.webp"}
         backgroundSize="contain"
+        backgroundAttachment={"fixed"}
         py="20"
         mt="5"
       >
