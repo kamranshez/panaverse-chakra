@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       {/* Left area of navigation */}
-      <Box pt={"5px"}>
+      <Box pt={"5px"} as="header">
         <Flex justifyContent={"space-around"} alignItems={"Center"}>
           <Box>
             <HStack>
