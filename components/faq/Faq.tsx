@@ -11,7 +11,7 @@ export default function Faq() {
   return (
     <Box>
     <Container maxWidth={1200} my="16">
-    <Flex>
+    <Flex flexDirection={{base:"column",md:"row"}}> 
       {/* Left section */}
       <Box flex={2}>
         <Box>

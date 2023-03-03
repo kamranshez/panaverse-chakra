@@ -3,6 +3,7 @@ import {
   Button,
   Flex,
   Heading,
+  Hide,
   HStack,
   Image,
   Link,
@@ -26,7 +27,7 @@ export default function TopContainer() {
       >
         <HStack>
           {/* Left box */}
-          <Box width={"50%"} color="white" pl={44}>
+          <Box width={{base:"100%",lg:"50%"}} color="white" pl={{base:10,lg:44}}>
             <Heading fontSize={52}>Build your next idea even faster</Heading>
             <Text lineHeight={"8"}>
               One Year Panaverse DAO Earn as you Learn Program. Consolidating
@@ -75,9 +76,11 @@ export default function TopContainer() {
             </Box>
           </Box>
           {/* Right box */}
+          <Hide below="lg">
           <Box w={"50%"}>
             <Image src="/images/banner.png"></Image>
           </Box>
+          </Hide>
         </HStack>
       </Box>
     </>

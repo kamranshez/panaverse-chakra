@@ -1,11 +1,12 @@
-import { Box, Button, Container, Flex, Heading, HStack, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, HStack, Input, Text, useColorMode } from "@chakra-ui/react";
 import React from "react";
 
 export default function Newsletter() {
+  const { colorMode } = useColorMode();
   return (
     <Box>
-      <Container bg={"gray.50"} maxWidth="100%" py={15}>
-        <Flex justifyContent={"space-around"}>
+      <Container bg={colorMode == "light" ? "blue.50" : "gray.500"} maxWidth="100%" py={15}>
+        <Flex justifyContent={"space-around"} flexDirection={{base:"column",md:"row"}}>
           <Box>
             <Heading fontWeight={"semibold"}>Join our Newletter</Heading>
             <Text>
@@ -15,7 +16,7 @@ export default function Newsletter() {
           <Box>
           <HStack>
             <Input placeholder="Enter your Email"></Input>
-            <Button px={10}>Subscribe</Button>
+            <Button py={10}>Subscribe</Button>
           </HStack>
           </Box>
         </Flex>

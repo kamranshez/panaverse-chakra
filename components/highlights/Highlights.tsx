@@ -1,4 +1,4 @@
-import { Box, Button, Center, Container, Flex, Heading, HStack, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Container, Flex, Heading, HStack, SimpleGrid, Text } from "@chakra-ui/react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 import React from "react";
 import { IoIosSettings, IoIosSpeedometer } from "react-icons/io";
@@ -22,7 +22,7 @@ export default function Highlights() {
         </Text>
       </Box>
       <Container maxWidth={1200}>
-      <Flex gap={3}>
+      <SimpleGrid columns={{base:1,md:2,lg:4}} gap={5}>
 
       {/* card 1 */}
         <Card align="center">
@@ -101,7 +101,7 @@ export default function Highlights() {
           </CardFooter>
         </Card>
       
-      </Flex>
+      </SimpleGrid>
       </Container>
     </Box>
   );
